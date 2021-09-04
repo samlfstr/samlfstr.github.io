@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Card component with floating labels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <!-- code here -->
+  <div class="card">
+    <div class="card-image">
+      <h2 class="card-heading">
+        Email checker
+        <small id="sml">Check if your email is valid</small>
+      </h2>
+    </div>
+    <form class="card-form">
+      <div class="input">
+        <input id="mil" type="text" class="input-field" required/>
+        <label class="input-label">Email</label>
+      </div>
+      <div class="action">
+        <button type="button" id="main_btn" class="action-button">Check</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- partial -->
+<script src="../Libraries/node_modules/jquery/dist/jquery.js"></script>
+<script src="check.js"></script>
+</body>
+</html>
