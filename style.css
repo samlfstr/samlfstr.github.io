@@ -1,0 +1,13 @@
+body{
+    background-color: whitesmoke;
+}
+.btn{
+    width: 18em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+.card{
+    border-radius: .5em !important;
+}
