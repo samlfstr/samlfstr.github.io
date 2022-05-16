@@ -21,5 +21,11 @@ btn.forEach((item) => {
         else if (innerText ==='TODO'){
             location.href = 'Html/todo.html';
         }
+        else if (innerText ==='WebSql'){
+            location.href = 'Html/webSql.html';
+        }
+        else if (innerText ==='WebSpeech'){
+            location.href = 'Html/webSpeech.html';
+        }
     });
 });
