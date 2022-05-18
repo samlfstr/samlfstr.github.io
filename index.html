@@ -1,162 +1,93 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" >
  <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible"
-        content="ie=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-        crossorigin="anonymous">
+  <title>CodePen - Blog Posts Card Layout - Code The Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="CSS/alt.css">
   <link rel="stylesheet"
         href="style.css">
-  <script defer
-          src="Scripts/main.js"></script>
-  <title>Home</title>
  </head>
  <body>
-  <div class="card-container"
-       style="min-height: 80vh;
-       display : flex;
-       align-items: center;
-       justify-content: center;
-       flex-wrap: wrap;
-       column-gap: 3em;
-       row-gap: 3rem;
-       margin-top: 1.5rem;
-       padding-right: 1rem;
-       padding-left: 1rem;
-  ">
-   <!-- *** Card 1 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">Propagation</h5>
-     <p class="card-text">Visualise the event propagation.</p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">PROPAGATION
-    </button>
+  <section class="cards-wrapper">
+   <div class="card-grid-space">
+    <a class="card" href="Html/bgColor.html">
+     <div>
+      <p class="pfirst">Change the BG color randomly</p>
+      <div class="date">6 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">BG COLOR</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-   <!-- *** Card 2 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">Background Color</h5>
-     <p class="card-text">Change background color and show the HEX code.</p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">BG COLOR
-    </button>
+   <div class="card-grid-space">
+    <a class="card" href="Html/todo.html">
+     <div>
+      <p class="pfirst">Take todo notes.</p>
+      <div class="date">9 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">TODO</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-   <!-- *** Card 3 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">Counter</h5>
-     <p class="card-text">
-      Simple counter with dynamic color change.
-     </p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">COUNTER
-    </button>
+   <div class="card-grid-space">
+    <a class="card" href="Html/carousel.html">
+     <div>
+      <p class="pfirst">A simple JS carousel</p>
+      <div class="date">14 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">Carousel</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-   <!-- *** Card 4 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">MODAL</h5>
-     <p class="card-text">
-      Modal used only HTML, CSS & JS.
-     </p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">MODAL
-    </button>
+   <div class="card-grid-space">
+    <a class="card" href="Html/counter.html">
+     <div>
+      <p class="pfirst">Icrease and ecrease counter</p>
+      <div class="date">14 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">Counter</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-
-   <!-- *** Card 5 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">CAROUSEL</h5>
-     <p class="card-text">
-      Reviews are shown in a carousel.
-     </p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">CAROUSEL
-    </button>
+   <div class="card-grid-space">
+    <a class="card" href="Html/modal.html">
+     <div>
+      <p class="pfirst">Js modal example</p>
+      <div class="date">14 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">Modal</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-   <!-- *** Card 6 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">TODO</h5>
-     <p class="card-text">
-      Todo list.
-     </p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">TODO
-    </button>
+   <div class="card-grid-space">
+    <a class="card" href="Html/webSpeech.html">
+     <div>
+      <p class="pfirst">Web speach api</p>
+      <div class="date">14 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">Web Speach</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-   <!-- *** Card 7 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">Web Sql</h5>
-     <p class="card-text">
-      A simple web Sql application.
-     </p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">WebSql
-    </button>
+   <div class="card-grid-space">
+    <a class="card" href="Html/webSql.html">
+     <div>
+      <p class="pfirst">A example of indexedDB usage</p>
+      <div class="date">14 Oct 2022</div>
+      <div class="tags">
+       <div class="tag">Indexed DB</div>
+      </div>
+     </div>
+    </a>
    </div>
-   <!-- END -->
-   <!-- *** Card 8 *** -->
-   <div class="card cards"
-        style="height: 10em;
-        width: 17rem;
-">
-    <div class="card-body">
-     <h5 class="card-title">Web Speech</h5>
-     <p class="card-text">
-      Web speech recognition.
-     </p>
-    </div>
-    <button class="btn btn-warning btn-sm shadow-none"
-            type="button">WebSpeech
-    </button>
-   </div>
-   <!-- END -->
+  </section>
 
 
-
-  </div>
  </body>
 </html>
