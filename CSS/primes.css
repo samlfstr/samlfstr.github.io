@@ -1,6 +1,18 @@
 html{
     font: 100%/1.45 'Lato',sans-serif;
 }
+code{
+    background-color: rgba(0,0,0,.05);
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 1.3em;
+}
+    .greenish{
+        background-color: rgb(55 170 56 / 41%);
+        border-radius: 3px;
+        padding: 2px 4px;
+    }
+
 .pageNav {
     list-style: none;
     padding: 10em 0 0 0;
@@ -18,7 +30,7 @@ html{
     li a {
         text-decoration: none;
         color: inherit;
-        cursor: inherit;
+        cursor: inherit ;
     }
     li[data-depth="2"]{
         margin-left: .7em;
