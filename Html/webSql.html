@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 
-<!--
-Copyright 2017 Google Inc.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
+<!--Copyright 2017 Google Inc.-->
 
 <html lang="en">
  <head>
 
-  <script>
-      //  philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build
-      window.ga = window.ga || function() {
-          (ga.q = ga.q || []).push(arguments);
-      };
-      ga('create', 'UA-33848682-1', 'auto');
-      ga('set', 'transport', 'beacon');
-      ga('send', 'pageview');
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-
   <meta charset="utf-8">
-  <meta name="description" content="Simplest possible examples of HTML, CSS and JavaScript.">
-  <meta name="author" content="//samdutton.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta itemprop="name" content="simpl.info: simplest possible examples of HTML, CSS and JavaScript">
-  <meta itemprop="image" content="/images/icons/icon192.png">
-  <meta id="theme-color" name="theme-color" content="#fff">
-
+  <meta name="description"
+        content="Simplest possible examples of HTML, CSS and JavaScript.">
+  <meta name="author"
+        content="//samdutton.com">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta itemprop="name"
+        content="simpl.info: simplest possible examples of HTML, CSS and JavaScript">
+  <meta itemprop="image"
+        content="/images/icons/icon192.png">
+  <meta id="theme-color"
+        name="theme-color"
+        content="#fff">
+  <link rel="stylesheet"
+        href="https://unpkg.com/@mui/material@latest/umd/material-ui.production.min.js">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/a11y-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
   <base target="_blank">
-
 
   <title>WebSQL</title>
 
-  <link rel="stylesheet" href="../CSS/webSql.css">
+  <link rel="stylesheet"
+        href="../CSS/webSql.css">
 
   <style>
       div {
           margin: 0 0 1.2em 0;
       }
+
       fieldset {
           border: 1px solid #ccc;
           margin: 0 0 1em 0;
           padding: 1.5em 1.5em 1.0em 1.5em;
       }
+
       input {
           border: 1px solid #ccc;
           color: #666;
@@ -61,16 +52,19 @@ limitations under the License.
           padding: 0.2em;
           width: calc(100% - 3.8em);
       }
+
       label {
           color: #444;
           display: inline-block;
           width: 3.2em;
       }
+
       legend {
           color: #444;
           font-weight: 400;
           padding: 0 0.5em 0 0.5em;
       }
+
       p#data {
           height: 9em;
       }
@@ -81,13 +75,47 @@ limitations under the License.
  <body>
 
   <div id="container">
+   <p>It's browsers build-in DB. It is very very useful and few knows it's existence.</p>
+
+   <p>Version is 1 by default and you decide the version you are using.</p>
+
+   <p>Events : there are 3 events :</p>
+
+   <pre style="font-size: small">
+    <code class="language-javascript click copy">
+   onupgradeneeded = e => {}
+   onsuccess = e => {}
+   onerror = e => {}
+    </code>
+   </pre>
+
+   <p>The image below shows the process with witch you create a database.</p>
+
+   <img src="../IMAGES/Diagram.png"
+        alt="EML diagram">
+
+   <p>How to create one :</p>
+
+   <pre style="font-size: small;">
+    <code class="language-javascript click copy">
+   const request = indexedDB.open('notes',1);
+    </code>
+   </pre>
+
+
+   <p>Working Example : </p>
+
    <fieldset>
     <legend>Store song</legend>
     <div>
-     <label for="artist">Artist: </label><input id="artist" type="text" value="" />
+     <label for="artist">Artist: </label><input id="artist"
+                                                type="text"
+                                                value="" />
     </div>
     <div>
-     <label for="song">Song: </label><input id="song" type="text" value="" />
+     <label for="song">Song: </label><input id="song"
+                                            type="text"
+                                            value="" />
     </div>
     <button id="storeButton">Store</button>
    </fieldset>
@@ -95,7 +123,9 @@ limitations under the License.
    <fieldset>
     <legend>Free text search</legend>
     <div>
-     <label for="query">Find: </label><input id="query" type="text" value = "" />
+     <label for="query">Find: </label><input id="query"
+                                             type="text"
+                                             value="" />
     </div>
     <button id="findButton">Find</button>
    </fieldset>
@@ -104,6 +134,7 @@ limitations under the License.
 
    <script src="../Scripts/webSql.js"></script>
   </div>
+
 
 
  </body>
