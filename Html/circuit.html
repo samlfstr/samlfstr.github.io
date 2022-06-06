@@ -12,7 +12,11 @@
  </head>
  <body>
   <img src="../IMAGES/circuit.svg"
-       style="display: none"
+       style="
+        visibility: hidden;
+        position: fixed;
+        z-index: -100;
+       "
        alt="image">
   <svg xmlns="http://www.w3.org/2000/svg"
        viewBox="0 0 504.74 501.41">
@@ -26,19 +30,21 @@
             stroke-dashoffset: -200;
             animation: draw 7s ease-out forwards;
         }
-        .cls-2{
+
+        .cls-2 {
             fill: none;
             stroke: rgba(0, 0, 0, 0.16);
             animation: show 7s ease-out forwards;
         }
 
         @keyframes draw {
-            to{
+            to {
                 stroke-dashoffset: 0;
             }
         }
+
         @keyframes show {
-            to{
+            to {
                 stroke: rgb(0, 0, 0);
             }
         }
