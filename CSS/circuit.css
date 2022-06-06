@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: inherit;
+}
+
+svg{
+    margin: 3em;
+}
