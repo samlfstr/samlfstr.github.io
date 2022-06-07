@@ -41,6 +41,10 @@ code{
         .pageNav {
             display: none;
         }
+        .article{
+            width: 90% !important;
+            text-align: center;
+        }
     }
     .listItem{
         padding-top: .3em;
