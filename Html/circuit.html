@@ -6,9 +6,12 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible"
         content="ie=edge">
-  <meta property='og:title' content='SVG Animated Circuit'/>
-  <meta property='og:image' content='../IMAGES/Circuit.png'/>
-  <meta property='og:description' content='Simple SVG Animated Circuit'/>
+  <meta property='og:title'
+        content='SVG Animated Circuit' />
+  <meta property='og:image'
+        content='../IMAGES/Circuit.png' />
+  <meta property='og:description'
+        content='Simple SVG Animated Circuit' />
   <link rel="stylesheet"
         href="../CSS/circuit.css">
   <title>SVG Animated Circuit</title>
@@ -28,7 +31,7 @@
         }
 
         .cls-2 {
-            fill: none;
+            fill: rgba(0, 0, 0, 0.51);
             stroke: rgba(0, 0, 0, 0.16);
             animation: show 7s ease-out forwards;
         }
@@ -42,6 +45,12 @@
         @keyframes show {
             to {
                 stroke: rgb(0, 0, 0);
+            }
+        }
+
+        @keyframes disappeare {
+            to {
+                stroke: rgba(0, 0, 0, 0);
             }
         }
     </style>
@@ -911,6 +920,5 @@
     </g>
    </g>
   </svg>
-
  </body>
 </html>

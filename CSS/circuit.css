@@ -3,8 +3,13 @@ body{
     justify-content: center;
     height: 100vh;
     margin: inherit;
+    background: green;
 }
 
 svg{
     margin: 3em;
+}
+
+.cls-2:active{
+    fill: black;
 }
