@@ -1,10 +1,7 @@
-h1 {
-    text-align: center;
-    font-family: Tahoma, Arial, sans-serif;
-    color: #06D85F;
-    margin: 80px 0;
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Gilda+Display&display=swap');
+body{
+    font-family: 'Gilda Display', serif;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -52,4 +49,39 @@ h1 {
 .popup .content {
     max-height: 30%;
     overflow: auto;
+}
+body {
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.polaroid {
+    width: 56%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.title{
+    width: 56%;
+    text-align: left;
+}
+h1{
+    text-align: center;
+}
+#disqus_thread{
+    width: 56%;
 }

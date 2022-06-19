@@ -1,12 +1,12 @@
 // Selection Logic : Select Only Words
-const word = document.getElementById('text');
-const word_pupop = document.querySelector('.overlay');
+const word = document.querySelectorAll('.text');
 
 // Dom : Add Span To Each Word
 function addSpan(item) {
     let html = item.innerText;
-    let words = html.split(" ");
-    let newHtml = "";
+    let words = html.split(" ");    let newHtml = "";
+
+    // Todo add REGEX to make sure you only select str chars.
 
     for (let i = 0; i < words.length; i++) {
         newHtml += '<span class="line">' + words[i] + '</span> ';
@@ -15,7 +15,11 @@ function addSpan(item) {
     item.innerHTML = newHtml;
 }
 
-addSpan(word);
+word.forEach((item)=>{
+    addSpan(item);
+})
+
+
 const def = document.querySelectorAll('.line');
 def.forEach((item) => {
     item.addEventListener('dblclick', () => {
@@ -34,6 +38,7 @@ def.forEach((item) => {
                 if (item_lvl1.fl === "noun" && item_lvl1.hasOwnProperty('hom')) {
                     definition[0] = `NOUN : ${item_lvl1.shortdef}`;
                 } else if (item_lvl1.hasOwnProperty('hom')) {
+                    // console.log(item_lvl1)
                     definition [1] = `${item_lvl1.fl.toUpperCase()} : ${item_lvl1.shortdef}`;
                 }
             })
