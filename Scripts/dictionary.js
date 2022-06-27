@@ -42,7 +42,7 @@ def.forEach((item) => {
 
             popup.innerHTML = `
              <h3 id="word_title">${word_title}</h3>
-             <a class="close" href="#">&times;</a>
+             <a class="close" href="#/">&times;</a>
              <div class="content word_def">
                  <i><strong>${fl}</strong> : ${definition}</i>
                  <br>
