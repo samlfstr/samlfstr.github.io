@@ -1,3 +1,6 @@
+body{
+    margin: 0 !important;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -62,7 +65,6 @@ div.polaroid {
 
 div.container {
     text-align: center;
-    padding: 10px 20px;
     display: flex;
     justify-content: center;
 }
